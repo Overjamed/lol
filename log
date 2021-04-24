@@ -1,0 +1,105 @@
+
+========================================
+    Builder Log
+========================================
+
+
+========================================
+    Checking Dependencies
+========================================
+
+Repos: IL2CPU, XSharp and Common is installed.
+Visual Studio 15.9+ is installed.
+Visual Studio Workloads is installed.
+Inno Setup is installed.
+
+
+========================================
+    Restore - Build.sln
+========================================
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\MSBuild.exe" "C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\Build.sln" /nologo /maxcpucount /nodeReuse:False /verbosity:minimal /t:"Restore" /p:DeployExtension=False
+  Wiederherzustellende Projekte werden ermittelt...
+  Das Projekt "C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\IL2CPU\..\Cosmos\source\Cosmos.Debug.Kernel\Cosmos.Debug.Kernel.csproj" wird übersprungen, da es nicht gefunden wurde.
+  Das Projekt "C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\IL2CPU\..\Cosmos\source\Cosmos.Debug.Kernel\Cosmos.Debug.Kernel.csproj" wird übersprungen, da es nicht gefunden wurde.
+  "C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\source\Cosmos.Core_Plugs\Cosmos.Core_Plugs.csproj" wiederhergestellt (in 1,19 sec).
+  "C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\XSharp\source\Spruce\Spruce.csproj" wiederhergestellt (in 1,42 sec).
+  "C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\XSharp\source\XSharp\XSharp\XSharp.csproj" wiederhergestellt (in 1,41 sec).
+  "C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\IL2CPU\source\Cosmos.IL2CPU\Cosmos.IL2CPU.csproj" wiederhergestellt (in 1,25 sec).
+  "C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\source\Cosmos.Debug.Kernel.Plugs.Asm\Cosmos.Debug.Kernel.Plugs.Asm.csproj" wiederhergestellt (in 19 ms).
+  "C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\source\Cosmos.Core_Asm\Cosmos.Core_Asm.csproj" wiederhergestellt (in 353 ms).
+  26 von 32 Projekten sind für die Wiederherstellung auf dem neuesten Stand.
+
+
+========================================
+    Build - Build.sln
+========================================
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\MSBuild.exe" "C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\Build.sln" /nologo /maxcpucount /nodeReuse:False /verbosity:minimal /t:"Build" /p:"OutputPath=C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\Build\VSIP\\" /p:"VsixOutputPath=C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\Build\VSIP\\" /p:DeployExtension=False
+  Cosmos.Debug.Common -> C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\Build\VSIP\Cosmos.Debug.Common.dll
+  Cosmos.Deploy.Pixie -> C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\Build\VSIP\Cosmos.Deploy.Pixie.exe
+  Cosmos.Build.Common -> C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\Build\VSIP\Cosmos.Build.Common.dll
+  Cosmos.Debug.GDB -> C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\Build\VSIP\Cosmos.Debug.GDB.exe
+  Spruce -> C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\Build\VSIP\Spruce.dll
+  Cosmos.Debug.DebugConnectors -> C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\Build\VSIP\Cosmos.Debug.DebugConnectors.dll
+  XSharp -> C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\Build\VSIP\XSharp.dll
+  Cosmos.Debug.Kernel -> C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\Build\VSIP\Cosmos.Debug.Kernel.dll
+  Cosmos.Core.DebugStub -> C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\Build\VSIP\Cosmos.Core.DebugStub.dll
+  Cosmos.Deploy.USB -> C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\Build\VSIP\Cosmos.Deploy.USB.exe
+  IL2CPU.API -> C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\Build\VSIP\IL2CPU.API.dll
+  Wiederherzustellende Projekte werden ermittelt...
+  Alle Projekte sind für die Wiederherstellung auf dem neuesten Stand.
+  VSPropertyPages -> C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\Build\VSIP\VSPropertyPages.dll
+  Cosmos.Debug.HyperVServer -> C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\Build\VSIP\Cosmos.Debug.HyperVServer.exe
+  Cosmos.Debug.HyperVServer -> C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\source\Cosmos.Debug.Hosts\obj\Debug\netstandard2.0\HyperVServer\
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2084,5): warning MSB3245: Dieser Verweis konnte nicht aufgelöst werden. Die "DapperExtensions.StrongName"-Assembly wurde nicht gefunden. Stellen Sie sicher, dass die Assembly auf dem Datenträger vorhanden ist. Falls dieser Verweis im Code erforderlich ist, können Kompilierungsfehler auftreten. [C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\IL2CPU\source\IL2CPU.Debug.Symbols\IL2CPU.Debug.Symbols.csproj]
+DebugInfo.cs(2,7): error CS0246: Der Typ- oder Namespacename "DapperExtensions" wurde nicht gefunden (möglicherweise fehlt eine using-Direktive oder ein Assemblyverweis). [C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\IL2CPU\source\IL2CPU.Debug.Symbols\IL2CPU.Debug.Symbols.csproj]
+DebugInfo.cs(3,7): error CS0246: Der Typ- oder Namespacename "DapperExtensions" wurde nicht gefunden (möglicherweise fehlt eine using-Direktive oder ein Assemblyverweis). [C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\IL2CPU\source\IL2CPU.Debug.Symbols\IL2CPU.Debug.Symbols.csproj]
+DebugInfo.cs(4,7): error CS0246: Der Typ- oder Namespacename "DapperExtensions" wurde nicht gefunden (möglicherweise fehlt eine using-Direktive oder ein Assemblyverweis). [C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\IL2CPU\source\IL2CPU.Debug.Symbols\IL2CPU.Debug.Symbols.csproj]
+  Cosmos.Debug.Hosts -> C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\Build\VSIP\Cosmos.Debug.Hosts.dll
+  Cosmos.Debug.HyperVServer -> C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\Build\VSIP\Cosmos.Debug.HyperVServer.exe
+  Cosmos.VS.Windows -> C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\Build\VSIP\Cosmos.VS.Windows.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(3036,5): error MSB3821: Die Datei "ProjectSystem\VS\PropertyPages\OldCosmosPropertyPageControl.resx" konnte nicht verarbeitet werden, weil sie sich im Internet oder in der Zone eingeschränkter Websites befindet oder die Webmarkierung aufweist. Entfernen Sie die Webmarkierung, wenn Sie diese Dateien verarbeiten möchten. [C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\source\Cosmos.VS.ProjectSystem\Cosmos.VS.ProjectSystem.csproj]
+  NASM -> C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\Build\VSIP\NASM.dll
+INTs.cs(235,29): warning CS0649: Dem Feld "INTs.mLastKnownAddress" wird nie etwas zugewiesen, und es hat immer seinen Standardwert von "0". [C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\source\Cosmos.Core\Cosmos.Core.csproj]
+ACPI.cs(89,30): warning CS0414: Dem Feld "ACPI.SCI_EN" wurde ein Wert zugewiesen, der aber nie verwendet wird. [C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\source\Cosmos.Core\Cosmos.Core.csproj]
+  Cosmos.Core -> C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\Build\VSIP\Cosmos.Core.dll
+  TheRingMaster -> C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\Build\VSIP\TheRingMaster.dll
+  Cosmos.Common -> C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\Build\VSIP\Cosmos.Common.dll
+  Cosmos.TestRunner.TestController -> C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\Build\VSIP\Cosmos.TestRunner.TestController.dll
+  Cosmos.Debug.Kernel.Plugs.Asm -> C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\Build\VSIP\Cosmos.Debug.Kernel.Plugs.Asm.dll
+PCIDeviceBridge.cs(13,21): warning CS0108: '"PCIDeviceBridge.SecondaryBusNumber" blendet den vererbten Member "PCIDevice.SecondaryBusNumber" aus. Verwenden Sie das new-Schlüsselwort, wenn das Ausblenden vorgesehen war. [C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\source\Cosmos.HAL2\Cosmos.HAL2.csproj]
+BlockDevice\Ports\Satapi.cs(105,21): warning CS0162: Unerreichbarer Code wurde entdeckt. [C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\source\Cosmos.HAL2\Cosmos.HAL2.csproj]
+BlockDevice\Ports\Sata.cs(112,21): warning CS0162: Unerreichbarer Code wurde entdeckt. [C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\source\Cosmos.HAL2\Cosmos.HAL2.csproj]
+Drivers\Video\VGADriver.cs(828,20): warning CS0219: Die Variable "values" ist zugewiesen, ihr Wert wird aber nie verwendet. [C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\source\Cosmos.HAL2\Cosmos.HAL2.csproj]
+BlockDevice\Ports\Sata.cs(206,21): warning CS0162: Unerreichbarer Code wurde entdeckt. [C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\source\Cosmos.HAL2\Cosmos.HAL2.csproj]
+BlockDevice\Ports\Sata.cs(280,21): warning CS0162: Unerreichbarer Code wurde entdeckt. [C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\source\Cosmos.HAL2\Cosmos.HAL2.csproj]
+  Cosmos.HAL2 -> C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\Build\VSIP\Cosmos.HAL2.dll
+Network\IPv4\ICMPClient.cs(108,1): warning CS1570: Der XML-Kommentar enthält ungültigen XML-Code: "Ein Endtag für Element "param" wurde erwartet." [C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\source\Cosmos.System2\Cosmos.System2.csproj]
+Network\IPv4\UDP\DHCP\DHCPClient.cs(23,13): warning CS1570: Der XML-Kommentar enthält ungültigen XML-Code: "An dieser Stelle wurde kein Endtag erwartet." [C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\source\Cosmos.System2\Cosmos.System2.csproj]
+Network\IPv4\UDP\DHCP\DHCPClient.cs(50,1): warning CS1570: Der XML-Kommentar enthält ungültigen XML-Code: "Ein Endtag für Element "param" wurde erwartet." [C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\source\Cosmos.System2\Cosmos.System2.csproj]
+Network\IPv4\UDP\DNS\DNSClient.cs(66,1): warning CS1570: Der XML-Kommentar enthält ungültigen XML-Code: "Ein Endtag für Element "param" wurde erwartet." [C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\source\Cosmos.System2\Cosmos.System2.csproj]
+PCSpeaker.cs(37,24): warning CS1584: Der XML-Kommentar enthält ein cref-Attribut "https://en.wikipedia.org/wiki/Duration_(music)" mit falscher Syntax. [C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\source\Cosmos.System2\Cosmos.System2.csproj]
+PCSpeaker.cs(52,24): warning CS1584: Der XML-Kommentar enthält ein cref-Attribut "https://en.wikipedia.org/wiki/Musical_note" mit falscher Syntax. [C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\source\Cosmos.System2\Cosmos.System2.csproj]
+PCSpeaker.cs(53,24): warning CS1584: Der XML-Kommentar enthält ein cref-Attribut "https://en.wikipedia.org/wiki/Audio_frequency" mit falscher Syntax. [C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\source\Cosmos.System2\Cosmos.System2.csproj]
+Network\Config\IPConfig.cs(142,50): warning CS0162: Unerreichbarer Code wurde entdeckt. [C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\source\Cosmos.System2\Cosmos.System2.csproj]
+Graphics\VBECanvas.cs(84,9): warning CS1587: Der XML-Kommentar ist auf keinem gültigen Sprachelement abgelegt. [C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\source\Cosmos.System2\Cosmos.System2.csproj]
+  Cosmos.System2 -> C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\Build\VSIP\Cosmos.System2.dll
+System\MathImpl.cs(391,26): warning CS0675: Bitweiser OR-Operator wird für einen signaturerweiterten Operanden verwendet. Es wird empfohlen, zuerst eine Umwandlung in einen kleineren unsignierten Typ durchzuführen. [C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\source\Cosmos.System2_Plugs\Cosmos.System2_Plugs.csproj]
+  Cosmos.System2_Plugs -> C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\Build\VSIP\Cosmos.System2_Plugs.dll
+
+
+========================================
+    Error
+========================================
+
+System.Exception: The process failed to execute!
+   bei Cosmos.Build.Builder.BuildTasks.ProcessBuildTaskBase.WaitForExit(Process process) in C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\source\Cosmos.Build.Builder\BuildTasks\ProcessBuildTaskBase.cs:Zeile 67.
+   bei Cosmos.Build.Builder.BuildTasks.ProcessBuildTaskBase.<>c__DisplayClass5_0.<RunAsync>b__2() in C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\source\Cosmos.Build.Builder\BuildTasks\ProcessBuildTaskBase.cs:Zeile 48.
+   bei System.Threading.Tasks.Task.Execute()
+--- Ende der Stapelüberwachung vom vorhergehenden Ort, an dem die Ausnahme ausgelöst wurde ---
+   bei System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   bei System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   bei System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.GetResult()
+   bei Cosmos.Build.Builder.ViewModels.MainWindowViewModel.<BuildAsync>d__27.MoveNext() in C:\Users\Elisabeth Gerson\Desktop\GalaxyOS\Cosmos-master\source\Cosmos.Build.Builder\ViewModels\MainWindowViewModel.cs:Zeile 140.
+
